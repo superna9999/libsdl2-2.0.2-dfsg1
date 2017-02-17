@@ -135,12 +135,12 @@ MALI_VideoInit(_THIS)
         return SDL_SetError("mali-fbdev: Could not get framebuffer information");
     }
     /* Enable triple buffering */
-    /*
+    ///*
     vinfo.yres_virtual = vinfo.yres * 3;
     if (ioctl(fd, FBIOPUT_VSCREENINFO, vinfo) == -1) {
 	printf("mali-fbdev: Error setting VSCREENINFO\n");
     }
-    */
+    //*/
     close(fd);
     system("setterm -cursor off");
 
